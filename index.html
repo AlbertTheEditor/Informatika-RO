@@ -1,104 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaming Video Editing Portfolio - Showcase of thrilling game edits, montages, and gaming videos.">
-    <title>Gaming Video Editing Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Informatika - Club de Robotică</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <h1>Welcome to My Gaming Video Editing Portfolio</h1>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="portfolio" class="main-container">
-    <h2 class="section-title">My Latest Game Edits</h2>
-    <div class="portfolio-grid">
-        <!-- Portfolio Item 1 -->
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/600x400/1E2A47/ffffff" alt="Gaming Edit 1">
-            <div class="portfolio-overlay">
-                <h3>Epic Montage</h3>
-                <button onclick="openModal('video1')">Watch</button>
-            </div>
+    <header>
+        <h1>Informatika</h1>
+        <p>Clubul de Robotică - Școala 12, Galați</p>
+        <nav>
+            <ul>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="#echipa">Echipa</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="despre">
+        <h2>Despre Noi</h2>
+        <p>Suntem un grup de elevi pasionați de robotică și tehnologie. Ne place să explorăm, să inovăm și să construim roboți care să ne ajute să învățăm mai multe despre știință și inginerie.</p>
+    </section>
+    
+    <section id="echipa">
+        <h2>Echipa Noastră</h2>
+        <p>Facem parte dintr-o echipă unită, plină de idei și dornică de performanță.</p>
+        <div class="team-photos">
+            <img src="team1.jpg" alt="Echipa Informatika">
+            <img src="team2.jpg" alt="Membrii echipei în acțiune">
         </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/600x400/2B3A55/ffffff" alt="Gaming Edit 2">
-            <div class="portfolio-overlay">
-                <h3>Battle Royale Highlights</h3>
-                <button onclick="openModal('video2')">Watch</button>
-            </div>
+    </section>
+    
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <p>Momente din activitățile noastre:</p>
+        <div class="gallery">
+            <img src="robot1.jpg" alt="Robot construit de echipă">
+            <img src="robot2.jpg" alt="Concurs de robotică">
         </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/600x400/3C4A61/ffffff" alt="Gaming Edit 3">
-            <div class="portfolio-overlay">
-                <h3>Speedrun Clips</h3>
-                <button onclick="openModal('video3')">Watch</button>
-            </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/600x400/1F2C48/ffffff" alt="Gaming Edit 4">
-            <div class="portfolio-overlay">
-                <h3>First-Person Shooter Highlights</h3>
-                <button onclick="openModal('video4')">Watch</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2025 Gaming Video Editing Portfolio. All Rights Reserved.</p>
-</footer>
-
-<!-- Video Modal -->
-<div id="video-modal" class="video-modal">
-    <span class="close-modal" onclick="closeModal()">&times;</span>
-    <iframe id="video-frame" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<script>
-    // Function to open video modal
-    function openModal(videoId) {
-        var videoURL = '';
-        switch (videoId) {
-            case 'video1':
-                videoURL = 'https://www.youtube.com/embed/dQw4w9WgXcQ'; // Example YouTube link
-                break;
-            case 'video2':
-                videoURL = 'https://www.youtube.com/embed/V-_O7nl0Ii0'; // Example YouTube link
-                break;
-            case 'video3':
-                videoURL = 'https://www.youtube.com/embed/3JZ_D3ELwOQ'; // Example YouTube link
-                break;
-            case 'video4':
-                videoURL = 'https://www.youtube.com/embed/2Vv-BfVoq4g'; // Example YouTube link
-                break;
-        }
-        document.getElementById('video-frame').src = videoURL;
-        document.getElementById('video-modal').style.display = 'flex';
-    }
-
-    // Function to close video modal
-    function closeModal() {
-        document.getElementById('video-frame').src = '';
-        document.getElementById('video-modal').style.display = 'none';
-    }
-</script>
-
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Ne poți găsi la Școala 12 din Galați sau ne poți scrie un mesaj!</p>
+        <form>
+            <input type="text" placeholder="Numele tău">
+            <input type="email" placeholder="Email-ul tău">
+            <textarea placeholder="Mesajul tău"></textarea>
+            <button type="submit">Trimite</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Informatika - Club de Robotică, Școala 12, Galați</p>
+    </footer>
 </body>
 </html>
