@@ -24,7 +24,7 @@ header {
     position: absolute;
     right: -200px;
     width: 100px;
-    animation: moveRobot 4s forwards;
+    animation: moveRobot 6s forwards;
 }
 
 .logo {
@@ -34,19 +34,23 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    animation: fadeInLogo 1s forwards 2s;
+    animation: fadeInLogo 1s forwards 3s;
 }
 
 @keyframes moveRobot {
     0% {
         right: -200px;
     }
-    50% {
+    40% {
+        right: 50%;
+        transform: translateX(-50%);
+    }
+    60% {
         right: 50%;
         transform: translateX(-50%);
     }
     100% {
-        right: 110%;
+        right: -110%;
     }
 }
 
