@@ -22,7 +22,7 @@ header {
 
 .robot {
     position: absolute;
-    right: -800px;
+    right: -3000px;
     width: 100px;
     animation: moveRobot 6s forwards;
 }
